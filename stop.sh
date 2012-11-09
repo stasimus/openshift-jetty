@@ -1,4 +1,6 @@
 #!/bin/bash
 cd ${OPENSHIFT_DATA_DIR}jetty
 
-kill `cat jetty.pid`
+if [ -a "jetty.pid" ]; then
+  kill `cat jetty.pid`
+fi
