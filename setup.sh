@@ -1,6 +1,6 @@
 #!/bin/sh
 
-JETTY_VERSION="8.1.6.v20120903"
+JETTY_VERSION="8.1.8.v20121106"
 
 cd $OPENSHIFT_DATA_DIR
 
@@ -16,7 +16,7 @@ else
     rm -rf jetty
   fi
 
-  curl -o jetty.tar.gz "http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-${JETTY_VERSION}.tar.gz" > $OPENSHIFT_DATA_DIR/curl.log
+  curl -o jetty.tar.gz "http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-${JETTY_VERSION}.tar.gz"
 
   tar -xf jetty.tar.gz
   rm jetty.tar.gz
